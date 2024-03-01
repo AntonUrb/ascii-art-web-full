@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width inital-scale=1.0">
+    <title>Ascii-Art-Web</title>
+    <link rel="stylesheet" href="/templates/style.css">
+</head>
+
+<body>
+    <h1>Ascii-Art-Web</h1>
+    <form method="POST" action="/asciiart">
+        <label for="input" name="input" id="input">Enter the text you want to convert</label><br>
+        <textarea name="text" id="text" placeholder="ASCII characters only" required></textarea><br>
+        <label class="fontText" for="fonts">Choose your font</label><br>
+
+        <div class="radios">
+
+            <input class="radioButton" type="radio" name="fonts" value="standard" id="standard" checked>
+            <label class="radioLabel" for="standard">Standard</label>
+
+            <input class="radioButton" type="radio" name="fonts" value="thinkertoy" id="thinkertoy">
+            <label class="radioLabel" for="thinkertoy">Thinkertoy</label>
+
+            <input class="radioButton" type="radio" name="fonts" value="shadow" id="shadow">
+            <label class="radioLabel" for="shadow">Shadow</label>
+
+        </div>
+
+        <div>
+            <input type="submit" value="Submit" id="submit">
+            <button name="download" value="true">Download</button>
+        </div>
+        
+    </form>
+
+        <div>
+            <pre id="output">{{.}}</pre>
+        </div>
+    
+    <footer>
+        <p1 class="footerText">Anton Urban & Daniil Leonov @Kood/Johvi 2023</p1>
+    </footer>
+
+</body>
+
+</html>

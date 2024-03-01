@@ -1,0 +1,107 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(228, 231, 221);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    height: 100%;
+    /* padding: 3rem; */
+}
+
+label {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 7vw;
+    color: rgb(158, 207, 167);
+    background-color: rgb(215, 230, 219);
+    border-radius: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2%;
+    margin-top: 3vh;
+    user-select: none;
+}
+
+#input {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.fontText {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+}
+
+textarea {
+    width: 30vw;
+    height: 5vh;
+    resize: none;
+}
+
+.radios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content:center;
+    grid-row-gap: 2px;
+    width: 5%;
+    margin: 0 auto;
+}
+
+.radioButton {
+    display: grid;
+    grid-column: 1;
+    width: 13px;
+    justify-self: right;
+}
+
+.radioLabel {
+    display: grid; 
+    grid-column: 2;
+    justify-content: start;
+}
+
+pre {
+    height: 30vh;
+    border: 2px inset rgb(186, 216, 199);
+    overflow-x: auto;
+    word-wrap: break-word;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: start;
+}
+
+#submit {
+    background-color: bisque;
+    color: black;
+    border: 2px solid #555;
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+#submit:hover {
+    background-color: rgb(163, 163, 131);
+}
+
+footer {
+    color: rgb(92, 100, 100);
+    display: flex;
+    justify-content: center;
+    background-color: rgb(207, 225, 207);
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    padding-top: 2vh;
+}
+
+.footerText {
+    padding-bottom: 2vh;
+}
+
